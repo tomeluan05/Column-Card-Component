@@ -1,0 +1,150 @@
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    /* (paragraphs) */
+    --very-light-gray: hsl(0, 0%, 95%);
+    /* (background, headings, buttons) */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Big Shoulders Display', 'cursive';
+    font-family: 'Fraunces', serif;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: var(--very-light-gray);
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    height: 70%;
+}
+
+.sedan{
+    background-color: var(--bright-orange);
+    padding: 40px;
+    border-radius: 5px 0 0 5px;
+}
+
+.title_sedan{
+    font-family: 'Big Shoulders Display', 'cursive';
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 30px 0;
+}
+
+.paragraph_sedan, .paragraph_suv, .paragraph_luxury{
+    max-width: 90%;
+    color: var(--transparent-white);
+    line-height: 1.5rem;
+}
+
+.suv{
+    background-color: var(--dark-cyan);
+    padding: 40px;
+}
+
+.title_suv{
+    font-family: 'Big Shoulders Display', 'cursive';
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 30px 0;
+}
+
+.luxury{
+    background-color: var(--very-dark-cyan);
+    padding: 40px;
+    border-radius: 0 5px 5px 0;
+}
+
+.title_luxury{
+    font-family: 'Big Shoulders Display', 'cursive';
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 30px 0;
+}
+
+.button_learn_more:hover{
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.button_learn_more_sedan{
+    padding: 12px 40px;
+    outline: none;
+    border: 0;
+    margin-top: 60px;
+    border-radius: 20px;
+    color: var(--bright-orange);
+}
+
+.button_learn_more_suv{
+    padding: 12px 40px;
+    outline: none;
+    border: 0;
+    margin-top: 60px;
+    border-radius: 20px;
+    color: var(--dark-cyan);
+}
+
+.button_learn_more_luxury{
+    padding: 12px 40px;
+    outline: none;
+    border: 0;
+    margin-top: 60px;
+    border-radius: 20px;
+    color: var(--very-dark-cyan);
+}
+
+@media screen and (max-width: 932px){
+    body{
+        background-color: rgb(192, 189, 189);
+    }
+    
+    .container{
+        height: 100%;
+        margin: 80px 0;
+    }
+
+    .content{
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .sedan{
+        background-color: var(--bright-orange);
+        padding: 40px;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .luxury{
+        background-color: var(--very-dark-cyan);
+        padding: 40px;
+        border-radius: 0 0 5px 5px;
+    }
+
+    .button_learn_more{
+        font-size: 0.9rem;
+    }
+    
+}
